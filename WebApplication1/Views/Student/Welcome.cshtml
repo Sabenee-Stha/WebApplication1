@@ -2,11 +2,16 @@
     ViewBag.Title = "Welcome";
 }
 
-<h2>Welcome</h2>
+<h2>A Personalized Welcome Message</h2>
+<hr />
+
+<p>
+    Your message, "<strong>@ViewData["Message"]</strong>", will be shown <strong>@ViewData["NumTimes"]</strong> times below:
+</p>
 
 <ul>
     @for (int i = 0; i < (int)ViewData["NumTimes"]; i++)
     {
-        <li>@ViewData["Message"]</li>
+        <li>@(i + 1). @ViewData["Message"]</li>
     }
 </ul>
