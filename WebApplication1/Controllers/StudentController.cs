@@ -16,7 +16,7 @@ namespace WebApplication1.Controllers
 
         public ActionResult Welcome(string name, int numTimes = 1)
         {
-            ViewData["Message"] = "Hello and Welcome " + name;
+            ViewData["Message"] = "Hello and Welcome to our page " + name;
             // This is my first change for the GitHub assignment.
             ViewData["NumTimes"] = numTimes;
 
